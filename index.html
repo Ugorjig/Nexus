@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    
+    <!-- Updated SEO & Social Sharing Meta Tags -->
+    <title>Cascade - The Social Platform for Creators</title>
+    <meta name="description" content="Cascade: A next-generation social platform for creators and communities, featuring AI-powered tools, deep monetization, and a unique user experience.">
+    <meta property="og:title" content="Cascade - The Social Platform for Creators">
+    <meta property="og:description" content="Join Cascade, a next-generation social platform for creators and communities.">
+    <meta property="og:image" content="/logo-share.png">
+    <meta property="og:url" content="https://cascade.social">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              // Primary color - Thick Blue
+              primary: '#1d4ed8',
+              'primary-hover': '#1e40af',
+              'primary-light': 'rgba(29, 78, 216, 0.1)',
+
+              // Light Theme
+              background: '#FFFFFF',
+              surface: '#F9FAFB',
+              'surface-hover': '#F3F4F6',
+              border: '#E5E7EB',
+              'on-surface': '#0F1419',
+              'on-surface-secondary': '#536471',
+              
+              // Dark Theme (Now the primary aesthetic)
+              'dark-background': '#000000', // Pure black like X for a powerful look
+              'dark-surface': '#16181C',    // Slightly lighter for depth
+              'dark-surface-secondary': '#2F3336', 
+              'dark-surface-hover': '#181818',     
+              'dark-border': '#2F3336',           
+              'dark-on-surface': '#EFF3F4',       
+              'dark-on-surface-secondary': '#71767B', 
+            },
+          },
+        },
+      }
+    </script>
+    </head>
+  <body class="bg-background text-on-surface dark:bg-dark-background dark:text-dark-on-surface transition-colors duration-200 text-sm">
+    <div id="root"></div>
+    <div id="modal-root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
